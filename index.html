@@ -16,20 +16,20 @@
   --gold2:   #FBBF24;
   --gold3:   #FDE68A;
   --goldDim: #92660a;
-  --bg:      #FFFBF0;
-  --bg2:     #FFF8E1;
-  --bg3:     #FEF3C7;
+  --bg:      #F0F9FF;
+  --bg2:     #E0F2FE;
+  --bg3:     #D0E8F2;
   --card:    #FFFFFF;
-  --border:  #F0B42940;
-  --border2: #F0B42970;
+  --border:  #7DD3FC40;
+  --border2: #7DD3FC70;
   --text:    #1C1200;
   --text2:   #5C4400;
   --text3:   #92660a;
   --red:     #DC2626;
   --green:   #16A34A;
   --blue:    #1D4ED8;
-  --shadow:  0 2px 16px rgba(240,180,41,0.13);
-  --shadow2: 0 4px 32px rgba(240,180,41,0.22);
+  --shadow:  0 2px 16px rgba(125,211,252,0.13);
+  --shadow2: 0 4px 32px rgba(125,211,252,0.22);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 body {
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  background-image: radial-gradient(ellipse at top, #FFF8E1 60%, #FDE68A22 100%);
+  background-image: radial-gradient(ellipse at top, #E0F2FE 60%, #BAE6FD22 100%);
 }
 
 /* TOAST */
@@ -229,7 +229,7 @@ box-shadow: 0 2px 8px rgba(240,180,41,0.35);
 
 /* CALC BOX */
 .calc-box {
-background: linear-gradient(135deg, #FFF8E1, #FEF3C7);
+background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
 border: 1.5px solid var(–gold);
 border-radius: 14px; padding: 18px; margin-bottom: 18px;
 }
@@ -245,7 +245,7 @@ border-top: 1.5px solid var(–gold); padding-top: 13px; margin-top: 11px;
 
 /* BALANCE BOX */
 .balance-box {
-background: linear-gradient(135deg, #FFFBF0, #FFF8E1);
+background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
 border: 1.5px solid var(–gold2); border-radius: 14px;
 padding: 18px; margin-bottom: 18px;
 }
@@ -322,7 +322,7 @@ position: relative; overflow: hidden;
 .summary-card::before {
 content: ‘’; position: absolute; top: -18px; right: -18px;
 width: 60px; height: 60px; border-radius: 50%;
-background: rgba(240,180,41,0.10);
+background: rgba(125,211,252,0.10);
 }
 .card-icon { font-size: 32px; margin-bottom: 9px; }
 .card-label { font-size: 15px; color: var(–text3); margin-bottom: 7px; font-weight: 600; }
@@ -672,7 +672,6 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 
   <!-- Incoming Materials Section -->
 
-
   <div class="form-card">
     <div class="form-card-title">➕ አዲስ ጨርቅ ጨምር</div>
     <div class="add-material-form">
@@ -681,7 +680,7 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       <button class="btn-primary" onclick="addMaterial()">✅ ጨምር</button>
     </div>
   </div>
-    
+
   </div>
 
   <div class="material-list" id="material-list"></div>
@@ -811,7 +810,7 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 
 <div class="form-group">
   <label>ማስታወሻ (አስፈላጊ ከሆነ)</label>
-  <input type="text" id="f-notes" placeholder="ተጨማሪ ማስታወሻ...">
+  <input type="text" id="f-notes" placeholder="ተጨማሪ ማስታወሳ...">
 </div>
 <button class="btn-primary" onclick="addDistribution()">📦 ስርጭት መዝግብ</button>
 ```
@@ -878,7 +877,7 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 
 <div class="form-group">
   <label>ማጣቀሻ / ማስታወሻ</label>
-  <input type="text" id="p-notes" placeholder="ደረሰኝ ቁጥር፣ ማስታወሻ...">
+  <input type="text" id="p-notes" placeholder="ደረሰኝ ቁጥር፣ ማስታወሳ...">
 </div>
 <button class="btn-success" onclick="addPayment()">✅ ክፍያ መዝግብ</button>
 ```

@@ -12,24 +12,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --gold:    #F0B429;
-  --gold2:   #FBBF24;
-  --gold3:   #FDE68A;
-  --goldDim: #92660a;
-  --bg:      #F0F9FF;
-  --bg2:     #E0F2FE;
-  --bg3:     #D0E8F2;
-  --card:    #FFFFFF;
-  --border:  #7DD3FC40;
-  --border2: #7DD3FC70;
-  --text:    #1C1200;
-  --text2:   #5C4400;
-  --text3:   #92660a;
-  --red:     #DC2626;
-  --green:   #16A34A;
-  --blue:    #1D4ED8;
-  --shadow:  0 2px 16px rgba(125,211,252,0.13);
-  --shadow2: 0 4px 32px rgba(125,211,252,0.22);
+  --gold:    #60A5FA;
+  --gold2:   #93C5FD;
+  --gold3:   #BFDBFE;
+  --goldDim: #3B82F6;
+  --bg:      #001A4D;
+  --bg2:     #003D82;
+  --bg3:     #1E3A8A;
+  --card:    #0F2847;
+  --border:  #3B82F640;
+  --border2: #60A5FA70;
+  --text:    #F0F9FF;
+  --text2:   #BFDBFE;
+  --text3:   #93C5FD;
+  --red:     #EF4444;
+  --green:   #22C55E;
+  --blue:    #60A5FA;
+  --shadow:  0 2px 16px rgba(59,130,246,0.15);
+  --shadow2: 0 4px 32px rgba(59,130,246,0.25);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 body {
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  background-image: radial-gradient(ellipse at top, #E0F2FE 60%, #BAE6FD22 100%);
+  background-image: radial-gradient(ellipse at top, #003D82 60%, #001A4D22 100%);
 }
 
 /* TOAST */
@@ -55,33 +55,33 @@ border: 1.5px solid var(–gold);
 
 /* HEADER */
 header {
-background: linear-gradient(135deg, #1C1200 0%, #3D2800 60%, #5C3D00 100%);
+background: linear-gradient(135deg, #000B47 0%, #001A4D 60%, #003D82 100%);
 padding: 0 18px;
 display: flex; align-items: center; justify-content: space-between;
 position: sticky; top: 0; z-index: 20;
-box-shadow: 0 2px 20px rgba(240,180,41,0.25);
+box-shadow: 0 2px 20px rgba(59,130,246,0.2);
 min-height: 80px;
 padding-top: env(safe-area-inset-top);
 }
 .header-left { display: flex; align-items: center; gap: 14px; }
 .logo-wrap {
 width: 64px; height: 64px; border-radius: 16px;
-background: linear-gradient(135deg, #2D1810 0%, #4A2C1A 50%, #3D2415 100%);
+background: linear-gradient(135deg, #001F3F 0%, #003D82 50%, #004DA6 100%);
 display: flex; align-items: center; justify-content: center;
 font-size: 36px; box-shadow: 0 6px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
 position: relative; overflow: hidden;
 }
 .header-title { font-size: 26px; font-weight: 900; color: white; letter-spacing: 0.3px; }
-.header-sub { font-size: 16px; color: #a07840; margin-top: 2px; }
+.header-sub { font-size: 16px; color: #93C5FD; margin-top: 2px; }
 .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
 .header-date {
-font-size: 15px; color: var(–gold3);
-background: rgba(240,180,41,0.12);
+font-size: 15px; color: #BFDBFE;
+background: rgba(59,130,246,0.15);
 padding: 7px 15px; border-radius: 22px;
-border: 1px solid rgba(240,180,41,0.3);
+border: 1px solid rgba(59,130,246,0.3);
 }
 .save-indicator {
-font-size: 14px; color: #a07840;
+font-size: 14px; color: #93C5FD;
 display: flex; align-items: center; gap: 4px;
 }
 .save-dot {
@@ -93,23 +93,23 @@ animation: pulse 2s infinite;
 
 /* NAV */
 nav {
-display: flex; background: #fff;
-border-bottom: 2px solid var(–gold);
+display: flex; background: #0F2847;
+border-bottom: 2px solid #60A5FA;
 position: sticky; top: 80px; z-index: 10;
-box-shadow: 0 2px 12px rgba(240,180,41,0.10);
+box-shadow: 0 2px 12px rgba(59,130,246,0.15);
 overflow-x: auto;
 }
 .nav-btn {
 flex: 1; background: none; border: none;
 border-bottom: 3px solid transparent;
 padding: 15px 2px 13px; cursor: pointer;
-color: #b08030; display: flex; flex-direction: column;
+color: #93C5FD; display: flex; flex-direction: column;
 align-items: center; gap: 4px; font-size: 26px;
 transition: all 0.18s; font-family: inherit;
 white-space: nowrap;
 min-width: 90px;
 }
-.nav-btn.active { color: var(–goldDim); border-bottom: 3px solid var(–gold); background: #FFF8E1; }
+.nav-btn.active { color: #60A5FA; border-bottom: 3px solid #60A5FA; background: #1E3A8A; }
 .nav-label { font-size: 15px; font-weight: 700; letter-spacing: 0.2px; color: inherit; }
 
 /* MAIN */
@@ -229,8 +229,8 @@ box-shadow: 0 2px 8px rgba(240,180,41,0.35);
 
 /* CALC BOX */
 .calc-box {
-background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
-border: 1.5px solid var(–gold);
+background: linear-gradient(135deg, #1E3A8A, #003D82);
+border: 1.5px solid #60A5FA;
 border-radius: 14px; padding: 18px; margin-bottom: 18px;
 }
 .calc-title { font-size: 17px; color: var(–goldDim); font-weight: 800; margin-bottom: 13px; }
@@ -245,8 +245,8 @@ border-top: 1.5px solid var(–gold); padding-top: 13px; margin-top: 11px;
 
 /* BALANCE BOX */
 .balance-box {
-background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
-border: 1.5px solid var(–gold2); border-radius: 14px;
+background: linear-gradient(135deg, #1E3A8A, #003D82);
+border: 1.5px solid #60A5FA; border-radius: 14px;
 padding: 18px; margin-bottom: 18px;
 }
 .balance-title { font-size: 17px; color: var(–goldDim); font-weight: 800; margin-bottom: 13px; }
@@ -261,21 +261,21 @@ border-top: 1.5px solid var(–gold2); padding-top: 13px; margin-top: 11px;
 /* BUTTONS */
 .btn-primary {
 width: 100%;
-background: linear-gradient(135deg, #1C1200, #3D2800);
+background: linear-gradient(135deg, #1E40AF, #1E3A8A);
 border: none; border-radius: 14px; padding: 18px;
-color: var(–gold2); font-size: 19px; font-weight: 800;
+color: #93C5FD; font-size: 19px; font-weight: 800;
 cursor: pointer; font-family: inherit;
-box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+box-shadow: 0 4px 16px rgba(59,130,246,0.2);
 transition: transform 0.1s, box-shadow 0.1s;
 }
 .btn-primary:active { transform: scale(0.98); }
 .btn-success {
 width: 100%;
-background: linear-gradient(135deg, #14532d, #16a34a);
+background: linear-gradient(135deg, #16A34A, #22C55E);
 border: none; border-radius: 14px; padding: 18px;
 color: #fff; font-size: 19px; font-weight: 800;
 cursor: pointer; font-family: inherit;
-box-shadow: 0 4px 14px rgba(22,163,74,0.25);
+box-shadow: 0 4px 14px rgba(34,197,94,0.25);
 }
 
 /* BACKUP PANEL */
@@ -292,11 +292,11 @@ font-weight: 800; cursor: pointer; font-family: inherit;
 border: 1.5px solid var(–border2); transition: all 0.15s;
 }
 .btn-backup-export {
-background: linear-gradient(135deg, #1C1200, #3D2800);
-color: var(–gold2); border-color: var(–gold);
+background: linear-gradient(135deg, #1E40AF, #1E3A8A);
+color: #93C5FD; border-color: #60A5FA;
 }
 .btn-backup-import {
-background: var(–bg2); color: var(–text2);
+background: #003D82; color: #93C5FD;
 }
 .btn-backup-clear {
 background: #FEF2F2; color: var(–red); border-color: #FCA5A5;
@@ -414,8 +414,8 @@ color: var(–text2); font-size: 16px; font-weight: 800;
 cursor: pointer; text-align: center; font-family: inherit; transition: all 0.15s;
 }
 .sub-tab.active {
-background: linear-gradient(135deg, #1C1200, #3D2800);
-border-color: var(–gold); color: var(–gold2);
+background: linear-gradient(135deg, #1E40AF, #1E3A8A);
+border-color: #60A5FA; color: #93C5FD;
 }
 
 .empty { text-align: center; color: var(–text3); padding: 44px 0; font-size: 17px; }
@@ -432,22 +432,22 @@ border-color: var(–gold); color: var(–gold2);
 #install-banner {
 display: none; position: fixed; bottom: 100px; left: 50%;
 transform: translateX(-50%); width: calc(100% - 28px); max-width: 472px;
-background: linear-gradient(135deg, #1C1200, #3D2800);
-border: 1.5px solid var(–gold); border-radius: 18px;
+background: linear-gradient(135deg, #001A4D, #003D82);
+border: 1.5px solid #60A5FA; border-radius: 18px;
 padding: 18px 20px; z-index: 100;
-box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+box-shadow: 0 8px 32px rgba(59,130,246,0.3);
 display: flex; align-items: center; gap: 16px;
 }
 #install-banner.hidden { display: none; }
-.install-text { flex: 1; font-size: 16px; color: var(–gold3); font-weight: 600; line-height: 1.4; }
-.install-text strong { color: var(–gold2); font-size: 18px; display: block; margin-bottom: 3px; }
+.install-text { flex: 1; font-size: 16px; color: #BFDBFE; font-weight: 600; line-height: 1.4; }
+.install-text strong { color: #93C5FD; font-size: 18px; display: block; margin-bottom: 3px; }
 .btn-install {
-background: var(–gold); color: #1C1200; border: none;
+background: #60A5FA; color: #001A4D; border: none;
 border-radius: 12px; padding: 14px 20px; font-size: 15px;
 font-weight: 900; cursor: pointer; font-family: inherit; white-space: nowrap;
 }
 .btn-dismiss {
-background: none; border: none; color: #a07840;
+background: none; border: none; color: #93C5FD;
 font-size: 22px; cursor: pointer; padding: 0 4px;
 }
 

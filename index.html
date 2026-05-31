@@ -618,7 +618,7 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       <div class="chip-row" id="edit-inc-unit-chips">
         <div class="chip" onclick="selectEditIncUnit('ሜትር',this)">ሜትር</div>
         <div class="chip" onclick="selectEditIncUnit('ኪግ',this)">ኪግ</div>
-        <div class="chip" onclick="selectEditIncUnit('በፍሬ',this)">በፍሬ</div>
+        <div class="chip" onclick="selectEditIncUnit('ፉርዳ',this)">ፋርዳ</div>
       </div>
     </div>
     <div class="modal-buttons">
@@ -681,29 +681,16 @@ width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       <button class="btn-primary" onclick="addMaterial()">✅ ጨምር</button>
     </div>
   </div>
-
-  <div class="form-card">
-    <div class="form-card-title">📬 ሊደርስ የሚችለውን ጨርቅ ወስን</div>
-    <div class="form-group">
-      <label>ጨርቅ ስም *</label>
-      <input type="text" id="inc-name" placeholder="ጨርቅ ስም" class="form-input">
-    </div>
-    <div class="form-group">
-      <label>ዋጋ (ብር) *</label>
-      <input type="number" id="inc-price" placeholder="ዋጋ (ብር)" class="form-input">
-    </div>
     <div class="form-group">
       <label>ክፍል/ክፍሎች *</label>
       <div class="chip-row" id="company-chips">
         <div class="chip selected" onclick="selectIncUnit('ሜትር',this)">ሜትር</div>
         <div class="chip" onclick="selectIncUnit('ኪግ',this)">ኪግ</div>
-        <div class="chip" onclick="selectIncUnit('ቀንድ',this)">ቀንድ</div>
+        <div class="chip" onclick="selectIncUnit('ፉርዳ',this)">ፋርዳ</div>
       </div>
     </div>
-    <button class="btn-primary" onclick="addIncomingMaterial()">📥 ወስነ ጀምር</button>
   </div>
 
-  <div class="section-title">📦 ሁሉም ጨርቅ</div>
   <div class="material-list" id="material-list"></div>
 </div>
 
